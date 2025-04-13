@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Portal de Notícias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header id="main-header" class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-heading font-bold text-primary">
+          LOGOTIPO
+        </a>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li><a href="index.html" class="hover:text-primary transition">Início</a></li>
+            <li><a href="#" class="hover:text-primary transition">Política</a></li>
+            <li><a href="#" class="hover:text-primary transition">Economia</a></li>
+            <li><a href="#" class="hover:text-primary transition">Esportes</a></li>
+            <li><a href="#" class="hover:text-primary transition">Cultura</a></li>
+          </ul>
+        </nav>
+        <button 
+          id="mobile-menu-button"
+          class="md:hidden text-neutral"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="bg-white md:hidden w-full border-t hidden">
+        <ul class="container mx-auto px-4 py-2">
+          <li><a href="index.html" class="block py-2 hover:text-primary transition">Início</a></li>
+          <li><a href="#" class="block py-2 hover:text-primary transition">Política</a></li>
+          <li><a href="#" class="block py-2 hover:text-primary transition">Economia</a></li>
+          <li><a href="#" class="block py-2 hover:text-primary transition">Esportes</a></li>
+          <li><a href="#" class="block py-2 hover:text-primary transition">Cultura</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="min-h-screen">
+      <div id="content" class="container mx-auto px-4 py-6">
+        <!-- Conteúdo será injetado pelo JavaScript -->
+      </div>
+    </main>
+
+    <footer class="bg-neutral text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="md:flex md:justify-between mb-6">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-heading font-bold mb-4">LOGOTIPO</h2>
+            <p class="max-w-md text-sm text-gray-300">
+              Portal de notícias desenvolvido como projeto acadêmico, utilizando HTML, CSS e JavaScript 
+              para criar uma experiência de usuário dinâmica e responsiva.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-sm font-semibold mb-3 uppercase tracking-wider">Categorias</h3>
+              <ul class="text-sm space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Política</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Economia</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Esportes</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Cultura</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Tecnologia</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold mb-3 uppercase tracking-wider">Informações</h3>
+              <ul class="text-sm space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Sobre nós</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Termos de uso</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Política de privacidade</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white transition">Contato</a></li>
+              </ul>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+              <h3 class="text-sm font-semibold mb-3 uppercase tracking-wider">Receba atualizações</h3>
+              <p class="text-sm text-gray-300 mb-3">
+                Inscreva-se para receber as principais notícias diretamente no seu email.
+              </p>
+              <form id="newsletter-form" class="flex">
+                <input 
+                  type="email" 
+                  id="newsletter-email"
+                  placeholder="Seu email" 
+                  class="px-3 py-2 bg-gray-700 text-white rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary w-full"
+                  required
+                />
+                <button 
+                  type="submit" 
+                  class="bg-primary hover:bg-primary/90 px-4 py-2 rounded-r-md transition"
+                  aria-label="Inscrever-se"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row md:justify-between md:items-center">
+          <p class="text-sm text-gray-300 mb-4 md:mb-0">
+            &copy; <span id="current-year"></span> Portal de Notícias. Todos os direitos reservados.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white transition" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white transition" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white transition" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white transition" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Templates -->
+    <template id="home-template">
+      <h2 class="text-2xl font-heading font-bold mb-4">Itens em Destaque</h2>
+      <div id="news-slider" class="relative bg-white rounded-lg shadow-md overflow-hidden mb-8">
+        <!-- Slider conteúdo será injetado aqui -->
+      </div>
+      
+      <h2 class="text-2xl font-heading font-bold mb-4">Todos os Itens</h2>
+      <div id="news-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <!-- Grid de notícias será injetado aqui -->
+      </div>
+      
+      <div id="author-info" class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <!-- Informações do autor serão injetadas aqui -->
+      </div>
+    </template>
+
+    <template id="detail-template">
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <a href="index.html" class="inline-block mb-6 text-primary hover:underline">
+          <i class="fas fa-arrow-left mr-2"></i> Voltar para a página inicial
+        </a>
+        
+        <div class="mb-6">
+          <h1 id="article-title" class="text-3xl font-heading font-bold mb-3"></h1>
+          <div id="article-meta" class="flex flex-wrap items-center text-sm text-neutral-light mb-4">
+            <!-- Meta dados serão injetados aqui -->
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h2 class="text-xl font-heading font-bold mb-4">Informações Gerais</h2>
+          <div id="article-info" class="bg-secondary p-5 rounded-lg mb-6">
+            <!-- Informações gerais serão injetadas aqui -->
+          </div>
+        </div>
+        
+        <div id="article-images-container" class="mb-8">
+          <h2 class="text-xl font-heading font-bold mb-4">Fotos do Item</h2>
+          <div class="relative">
+            <div id="article-images" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <!-- Imagens serão injetadas aqui -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h2 class="text-xl font-heading font-bold mb-4">Conteúdo Completo</h2>
+          <div id="article-content" class="prose max-w-none">
+            <!-- Conteúdo completo será injetado aqui -->
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap items-center justify-between border-t pt-6">
+          <div class="mb-4 md:mb-0">
+            <span class="font-semibold mr-2">Compartilhar:</span>
+            <div class="inline-flex space-x-3">
+              <a href="#" class="text-neutral-light hover:text-primary transition" aria-label="Compartilhar no Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-neutral-light hover:text-primary transition" aria-label="Compartilhar no Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-neutral-light hover:text-primary transition" aria-label="Compartilhar no LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-neutral-light hover:text-primary transition" aria-label="Compartilhar no WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <a href="index.html" class="inline-block text-primary hover:underline">
+              <i class="fas fa-arrow-left mr-2"></i> Voltar para a página inicial
+            </a>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="not-found-template">
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h1 class="text-2xl font-heading font-bold mb-4">Artigo não encontrado</h1>
+        <p>O artigo que você está procurando não existe ou foi removido.</p>
+        <a href="index.html" class="inline-block mt-4 text-primary hover:underline">
+          <i class="fas fa-arrow-left mr-2"></i> Voltar para a página inicial
+        </a>
+      </div>
+    </template>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
