@@ -5,6 +5,9 @@ let currentSlide = 0;
 let sliderInterval = null;
 let progressInterval = null;
 
+// Log para debugging
+console.log("Aplicação inicializada");
+
 // Funções utilitárias
 function getTemplate(id) {
   return document.getElementById(id).content.cloneNode(true);
