@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avanços na medicina: nova vacina promete combater variantes - Portal de Notícias</title>
+  <title>Descoberta arqueológica revela civilização desconhecida na Amazônia - Portal de Notícias</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -93,27 +93,24 @@
       cursor: pointer;
     }
 
-    /* Article Content */
-    main {
-      padding: 30px 0;
-    }
-
+    /* Article Styles */
     .article-container {
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 30px 0;
       padding: 30px;
-      margin-bottom: 30px;
     }
 
     .back-link {
       display: inline-block;
       margin-bottom: 20px;
-      color: var(--primary);
+      color: var(--neutral-light);
+      font-size: 0.9rem;
     }
 
     .back-link:hover {
-      text-decoration: underline;
+      color: var(--primary);
     }
 
     .article-title {
@@ -121,51 +118,59 @@
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: 15px;
+      color: var(--neutral);
     }
 
     .article-meta {
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
       color: var(--neutral-light);
+      font-size: 0.9rem;
       margin-bottom: 25px;
+      display: flex;
       flex-wrap: wrap;
     }
 
     .article-meta .separator {
-      margin: 0 8px;
+      margin: 0 5px;
     }
 
     .general-info {
       background-color: var(--secondary);
       padding: 20px;
       border-radius: 8px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+    }
+
+    .general-info p {
+      margin-bottom: 10px;
+    }
+
+    .general-info p:last-child {
+      margin-bottom: 0;
     }
 
     .section-title {
       font-family: 'Merriweather', serif;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 15px;
+      color: var(--neutral);
     }
 
     .image-gallery {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
-      margin-top: 15px;
     }
 
     .gallery-image {
-      height: 180px;
       border-radius: 8px;
       overflow: hidden;
       cursor: pointer;
+      height: 200px;
     }
 
     .gallery-image img {
@@ -180,8 +185,7 @@
     }
 
     .article-content {
-      font-size: 1.05rem;
-      line-height: 1.7;
+      margin-bottom: 25px;
     }
 
     .article-content p {
@@ -191,36 +195,44 @@
     .article-content h3 {
       font-family: 'Merriweather', serif;
       font-weight: 700;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin: 30px 0 15px;
+      color: var(--neutral);
     }
 
     .share-section {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid #eee;
       padding-top: 20px;
-      margin-top: 30px;
-      flex-wrap: wrap;
+      border-top: 1px solid var(--secondary);
     }
 
-    .share-section .share-title {
+    .share-title {
       font-weight: 600;
       margin-right: 10px;
     }
 
     .share-links {
       display: flex;
-      gap: 15px;
+      gap: 10px;
     }
 
     .share-links a {
-      color: var(--neutral-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      color: var(--neutral);
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .share-links a:hover {
-      color: var(--primary);
+      background-color: var(--primary);
+      color: white;
     }
 
     /* Footer */
@@ -362,8 +374,21 @@
         display: block;
       }
       
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .share-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .share-section > div {
+        margin-bottom: 15px;
+      }
+      
       .article-title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -396,62 +421,68 @@
           <i class="fas fa-arrow-left"></i> Voltar para a página inicial
         </a>
         
-        <h1 class="article-title">Avanços na medicina: nova vacina promete combater variantes</h1>
+        <h1 class="article-title">Descoberta arqueológica revela civilização desconhecida na Amazônia</h1>
         
         <div class="article-meta">
-          <span>10 Ago 2023</span>
+          <span>22 Jul 2023</span>
           <span class="separator">•</span>
-          <span>Dra. Sophia Kim</span>
+          <span>Dr. Paulo Mendes</span>
           <span class="separator">•</span>
-          <span>5 min de leitura</span>
+          <span>6 min de leitura</span>
         </div>
         
         <section class="general-info">
-          <h3 class="section-title">TECNOLOGIA MÉDICA AVANÇADA</h3>
-          <p>A vacina utiliza uma tecnologia inédita de mRNA de última geração que permite rápida adaptação a novas variantes virais. Os resultados dos ensaios clínicos de fase 3 demonstraram eficácia superior a 95% contra múltiplas variantes, incluindo aquelas que anteriormente escapavam da proteção vacinal.</p>
-          <p>A agência reguladora já iniciou o processo de aprovação acelerada, com expectativa de disponibilidade para o público geral nos próximos três meses, priorizando inicialmente profissionais de saúde e grupos de risco.</p>
+          <h3 class="section-title">ARQUEOLOGIA AMAZÔNICA</h3>
+          <p>Uma expedição internacional de arqueólogos descobriu vestígios de uma civilização complexa que habitou a região amazônica há aproximadamente 2.000 anos, modificando significativamente o entendimento científico sobre a ocupação humana pré-colombiana da floresta tropical.</p>
+          <p>As escavações revelaram estruturas geométricas sofisticadas, ferramentas avançadas e evidências de agricultura intensiva que sugerem uma população de dezenas de milhares de habitantes organizados em um sistema social hierárquico com conhecimentos astronômicos e engenharia hidráulica.</p>
         </section>
         
         <section class="image-gallery">
-          <h2 class="section-title">Imagens da Pesquisa</h2>
+          <h2 class="section-title">Imagens da Descoberta</h2>
           <div class="gallery-grid">
             <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Laboratório de pesquisa médica">
+              <img src="https://images.unsplash.com/photo-1518709779341-56cf4535e94b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Floresta amazônica">
             </div>
             <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Microscópio com amostra">
+              <img src="https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Escavação arqueológica">
             </div>
             <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cientista trabalhando em laboratório">
+              <img src="https://images.unsplash.com/photo-1572978122964-a2489067a24e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Artefatos antigos">
             </div>
             <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Análise de dados em computador">
+              <img src="https://images.unsplash.com/photo-1502088522524-2b6c06713ce9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vista aérea da floresta">
             </div>
           </div>
         </section>
         
         <section class="article-content">
-          <p>Cientistas desenvolveram uma vacina de última geração com capacidade de adaptação a múltiplas variantes virais, representando um avanço significativo no combate a doenças infecciosas. A tecnologia utilizada permite que a vacina "aprenda" e se ajuste a novas mutações do vírus, oferecendo proteção ampliada mesmo contra variantes ainda não identificadas.</p>
+          <p>Uma equipe internacional de arqueólogos anunciou hoje a descoberta de vestígios de uma civilização até então desconhecida que habitou a região amazônica há aproximadamente 2.000 anos. Os achados, localizados numa área remota entre os estados do Amazonas e Pará, revelam uma sociedade complexa com avançados conhecimentos de engenharia, astronomia e agricultura.</p>
           
-          <p>Os testes clínicos, conduzidos em mais de 45.000 voluntários de 18 países, mostraram uma eficácia superior a 95% na prevenção de casos graves e hospitalizações, além de reduzirem significativamente a transmissão viral entre pessoas vacinadas.</p>
+          <p>A expedição, liderada por pesquisadores brasileiros em colaboração com cientistas de universidades europeias e norte-americanas, utilizou tecnologias de sensoriamento remoto para identificar padrões geométricos na vegetação antes de iniciar as escavações que confirmaram a presença de estruturas artificiais sob a densa floresta atual.</p>
           
-          <h3>Tecnologia revolucionária</h3>
+          <h3>Estruturas e artefatos surpreendentes</h3>
           
-          <p>A nova abordagem utiliza uma plataforma avançada de mRNA que permite a rápida atualização da vacina em resposta a novas variantes. O diferencial está no sistema de "biblioteca genética" incorporado, que permite ao sistema imunológico reconhecer e responder a diversas versões da proteína viral.</p>
+          <p>Entre as descobertas mais significativas estão estruturas geométricas com até 300 metros de diâmetro, com perfeita orientação astronômica e sistemas de canais que sugerem avançado conhecimento de engenharia hidráulica. Também foram encontrados milhares de artefatos, incluindo cerâmicas elaboradas, ferramentas de pedra polida e evidências de metalurgia básica.</p>
           
-          <p>"Esta é uma mudança de paradigma na vacinologia", afirmou a Dra. Sophia Kim, principal pesquisadora do estudo. "Em vez de perseguirmos constantemente novas variantes, criamos um sistema que pode antecipar e responder a mutações futuras antes mesmo que elas se tornem predominantes".</p>
+          <p>"O nível de sofisticação dessas estruturas desafia completamente nossa compreensão anterior sobre as sociedades amazônicas pré-colombianas", explica o Dr. Paulo Mendes, arqueólogo da Universidade Federal do Pará e líder da expedição. "Estamos diante de evidências de uma sociedade complexa com planejamento urbano, divisão social do trabalho e domínio tecnológico surpreendente para o período."</p>
           
-          <h3>Impacto na saúde pública</h3>
+          <h3>Reescrevendo a história amazônica</h3>
           
-          <p>Especialistas em saúde pública estimam que esta nova tecnologia pode reduzir em até 80% os surtos sazonais e potencialmente prevenir futuras pandemias causadas por vírus da mesma família. A capacidade de produção atual permite a fabricação de 2 bilhões de doses anuais, com planos de expansão para atender à demanda global.</p>
+          <p>A descoberta contradiz a visão tradicional de que a floresta amazônica era habitada apenas por pequenos grupos nômades antes da chegada dos europeus. Os pesquisadores estimam que essa civilização pode ter abrigado entre 50.000 e 100.000 pessoas em seu auge, organizadas em assentamentos interconectados por estradas e vias fluviais.</p>
           
-          <p>Além da eficácia superior, a vacina apresenta perfil de segurança comparável às vacinas já em uso, com efeitos colaterais leves e transitórios na maioria dos participantes. O acompanhamento de longo prazo dos voluntários continua para avaliar a duração da proteção.</p>
+          <p>Análises de solo revelaram técnicas avançadas de manejo agrícola, incluindo a criação de terra preta (um solo extremamente fértil criado artificialmente) e sistemas de cultivo que permitiam a produção intensiva de alimentos sem degradar o ambiente florestal.</p>
           
-          <h3>Disponibilidade e distribuição</h3>
+          <h3>Colapso misterioso</h3>
           
-          <p>As agências reguladoras de diversos países já iniciaram o processo de aprovação em caráter emergencial, com expectativa de disponibilidade para o público nas próximas semanas. A distribuição seguirá protocolos estabelecidos, priorizando profissionais de saúde e populações de maior risco.</p>
+          <p>Um dos aspectos mais intrigantes da descoberta é o aparente colapso repentino dessa civilização. Datações de carbono indicam que o local foi abandonado abruptamente por volta do ano 500 d.C., muito antes da chegada dos europeus ao continente.</p>
           
-          <p>A tecnologia também permite armazenamento em temperaturas de refrigerador comum, facilitando significativamente a logística de distribuição em regiões com infraestrutura limitada, um avanço importante para garantir acesso global à vacina.</p>
+          <p>"Existem evidências de um evento climático extremo, possivelmente uma seca prolongada que pode ter desestabilizado o sistema social e agrícola", sugere a Dra. Martina Hoffmann, paleoclimatologista que integra a equipe. "Também estudamos a possibilidade de conflitos com outros grupos ou uma epidemia, mas ainda não temos conclusões definitivas."</p>
+          
+          <h3>Implicações para a conservação</h3>
+          
+          <p>Os pesquisadores destacam que a descoberta tem implicações importantes para as estratégias atuais de conservação da Amazônia. "O que encontramos não é uma floresta 'virgem', mas um ambiente que foi intensamente manejado por humanos durante milênios", observa Mendes. "Estas técnicas antigas de manejo podem conter lições valiosas para o desenvolvimento sustentável contemporâneo."</p>
+          
+          <p>A equipe continuará as escavações pelos próximos cinco anos, e já está planejando a criação de um museu na região para preservar e exibir os artefatos encontrados, bem como educar o público sobre esta importante capítulo da história pré-colombiana das Américas.</p>
         </section>
         
         <div class="share-section">
