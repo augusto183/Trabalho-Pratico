@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Notícia - Portal de Notícias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/detalhes.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">LOGOTIPO</a>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="categoria_politica.html">Política</a></li>
+            <li><a href="categoria_economia.html">Economia</a></li>
+            <li><a href="categoria_esportes.html">Esportes</a></li>
+            <li><a href="categoria_cultura.html">Cultura</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-button" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="back-navigation">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a>
+      </div>
+
+      <!-- Article Content - Will be populated by JavaScript -->
+      <section id="article-content" class="article-details">
+        <div class="article-loading">
+          <div class="spinner"></div>
+          <p>Carregando conteúdo...</p>
+        </div>
+      </section>
+
+      <!-- Related Articles Section -->
+      <section class="related-articles">
+        <h2 class="section-title">Notícias Relacionadas</h2>
+        <div class="related-articles-grid" id="related-articles-grid">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>LOGOTIPO</h2>
+          <p>Seu portal de notícias confiável com as informações mais relevantes do Brasil e do mundo.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Categorias</h3>
+            <ul>
+              <li><a href="categoria_politica.html">Política</a></li>
+              <li><a href="categoria_economia.html">Economia</a></li>
+              <li><a href="categoria_esportes.html">Esportes</a></li>
+              <li><a href="categoria_cultura.html">Cultura</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Institucional</h3>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Nossa equipe</a></li>
+              <li><a href="#">Termos de uso</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>Receba nossas principais notícias no seu e-mail</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Seu e-mail" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Portal de Notícias. Todos os direitos reservados.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/newsData.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/detalhes.js"></script>
+</body>
+</html>

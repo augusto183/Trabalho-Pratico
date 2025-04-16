@@ -2,9 +2,9 @@
 
 // Dados do autor
 const authorData = {
-    name: "Nome do Aluno",
-    course: "Engenharia de Software",
-    class: "FS0124",
+    name: "Augusto Gonçalves Gomes Furtado",
+    course: "Ciência da Computação",
+    class: "Manhã",
     socialMedia: [
       { name: "Facebook", url: "#", icon: "fa-facebook-f" },
       { name: "Twitter", url: "#", icon: "fa-twitter" },
